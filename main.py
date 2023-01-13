@@ -41,5 +41,6 @@ if image.width > 128 or image.height > 128:
             file.write(newImage.encode("utf-8"))
             file.flush()
         print(f"{colorize.FGCyan}[~] Photo saved in {argv[1] + '.symb'}{colorize.Reset}")
-system("cls")
-exit(newImage)
+else:
+    system("cls")
+    exit(newImage)
